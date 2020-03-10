@@ -33,7 +33,7 @@ TJ is a Web Applications Engineer for a manufacturing company in Tucson, Arizona
 
 [placeholder] 
 
-![Philip Howley](images/philip.jpg)
+![Philip Howley](images/rsz_philip-howley.jpg)
 #### Philip Howley 
 
 Phil has taught web technologies at various colleges in Los Angeles since 2003. He has a BS in Financial Management from Clemson University and an MBA with a concentration in CIS from Temple University. Phil completed the 3 month General Assembly Full Stack program as a student. Phil recently completed a 6 month part-time full stack UCLA extensions program as a TA. Phil's full time gig is as an Okta consultant. 
