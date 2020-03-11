@@ -5,7 +5,7 @@
 -----------------------------------------
 
 ## Table of Contents
-
+* [Welcome](#welcome)
 * [Instructional Staff](#instructional-staff)
     * [Instructor](#instructor)
     * [Teaching Assistants](#teaching-assistants)
@@ -16,6 +16,13 @@
 * [Important Links](#important-links)
 
 -----------------------------------------
+## Welcome
+
+Welcome to the University of Arizona Online Coding Bootcamp. This six month program is meant to help you to grow in to a full-stack developer, but it will challenge you and potentially push you outside of your comfort zone at some points. With that being said, prepare for an intense six months of learning, work, and probably a bit less sleep than usual. It will be a challenge, but I am positive that you are capable of being successful! Be sure to plan for the intensity and prepare to make the necessary short term sacrifices: they will pay off!
+
+We look forward to meeting you on the first day and working with you over the course of the program!
+
+- Your Instructional Staff
 
 ## Instructional Staff
 
@@ -61,8 +68,34 @@ Over the course of our 24 week program, you will be required to complete:
 ```js
 const graders = {
   phil: [
+    'Andrew Morrow',
+    'Ann Chenevert-Steffler',
+    'Curtis Rogers',
+    'Devin Payton',
+    'Emily Gallina',
+    'emmett bishop',
+    'Gedalya Krycer',
+    'Gene Torres',
+    'Isaac Mckittrick',
+    'Jacob Cravey',
+    'Jacob Peters',
+    'James Gitumbi',
+    'Jerry Forsberg',
   ],
   sangeetha: [
+    'Joseph Reyes',
+    'Kaelyn Rieffer',
+    'Lathisha Nair',
+    'Linnea Gear',
+    'Luis Molina',
+    'Michael Farris',
+    'Nina Rocket',
+    'Scott Harris',
+    'Sumnima Bhandari',
+    'Tanner Nielsen',
+    'Thalia Martinez',
+    'travis acker',
+    'Yulia Tikhonova',
   ]
 }
 ```
