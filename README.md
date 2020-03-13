@@ -44,7 +44,7 @@ Sangeetha Kaliaperumal is a mother of 2 kids living in Denver, Colorado. She sta
 ![Philip Howley](images/rsz_philip-howley.jpg)
 #### Philip Howley 
 
-Phil has taught web technologies at various colleges in Los Angeles since 2003. He has a BS in Financial Management from Clemson University and an MBA with a concentration in CIS from Temple University. Phil completed the 3 month General Assembly Full Stack program as a student. Phil recently completed a 6 month part-time full stack UCLA extensions program as a TA. Phil's full time gig is as an Okta consultant. 
+Phil has taught web technologies at various colleges in Los Angeles since 2003. He has a BS in Financial Management from Clemson University and an MBA with a concentration in CIS from Temple University. Phil completed a 3-month full-time General Assembly Full Stack program as a student a few years back. Phil has TA'd on campus at UCLA last year and just recently wrapped up TA'ing online for UCLA. Both classes were for this same 6-month part-time full-stack program. Phil's full time gig is as an Okta consultant.  
 
 -----------------------------------------
 
