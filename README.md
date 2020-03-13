@@ -14,6 +14,7 @@
     * [Attendance](#attendance)
     * [Projects](#projects)
 * [Important Links](#important-links)
+* [Resources We Love](#resources-we-love)
 
 -----------------------------------------
 ## Welcome
@@ -22,7 +23,7 @@ Welcome to the University of Arizona Online Coding Bootcamp. This six month prog
 
 We look forward to meeting you on the first day and working with you over the course of the program!
 
-- Your Instructional Staff
+\- Your Instructional Staff
 
 ## Instructional Staff
 
@@ -106,6 +107,34 @@ const graders = {
 ## Important Links
 
 ### Slack
-[placeholder]
+[coming soon]
 ### Bootcamp Spot
 https://bootcampspot.com
+
+-----------------------------------------
+
+## Resources We Love
+
+### For Git
+[Coming at a later date!]
+
+### For HTML/CSS
+[Coming at a later date!]
+
+### For Javascript
+[Coming at a later date!]
+
+### For APIs
+[Coming at a later date!]
+
+### For Node
+[Coming at a later date!]
+
+### For MySQL
+[Coming at a later date!]
+
+### For Mongo
+[Coming at a later date!]
+
+### For React
+[Coming at a later date!]
