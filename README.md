@@ -107,7 +107,7 @@ const graders = {
 ## Important Links
 
 ### Slack
-[coming soon]
+https://uofavirtfsfpt-byr6963.slack.com/
 ### Bootcamp Spot
 https://bootcampspot.com
 
