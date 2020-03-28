@@ -36,10 +36,10 @@ TJ is a Web Applications Engineer for a manufacturing company in Tucson, Arizona
 
 ### Teaching Assistants
 
-![Sangeetha Kaliaperumal](images/sangeetha.jpg)
-#### Sangeetha Kaliaperumal 
+![Cesar Gomez](images/cesar.jpg)
+#### Cesar Gomez
 
-Sangeetha Kaliaperumal is a mother of 2 kids living in Denver, Colorado. She started coding from highschool. She completed Masters of Computer Applications, University of Chennai. She is also a certified Oracle Pl/SQL Associate and ISTQB certified tester.  She is passionate about coding and been with Trilogy for 3 years.
+{Placeholder}
 
 
 ![Philip Howley](images/rsz_philip-howley.jpg)
