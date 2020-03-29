@@ -39,8 +39,7 @@ TJ is a Web Applications Engineer for a manufacturing company in Tucson, Arizona
 ![Cesar Gomez](images/cesar.jpg)
 #### Cesar Gomez
 
-{Placeholder}
-
+Cesar has experiance teaching and assisting students become web developers since beginning of 2019.   He has a BS in Business Management from Western Governors University. He has sub-instrutued and T.A'd for other co-horts, most recently at the UCB. Cesar currently has a full time gig as a guitar inspector for Fender Musical Instruments. 
 
 ![Philip Howley](images/rsz_philip-howley.jpg)
 #### Philip Howley 
