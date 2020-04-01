@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+#fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  background: #eee;
+}
+
+.wrapper {
+  width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 20px;
+}
+
+#relative {
+  position: relative;
+  height: 200px;
+  padding: 20px;
+  background: #eee;
+  text-align: center;
+}
+
+.absolute {
+  position: absolute;
+  width: 250px;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  background: #999;
+  text-align: center;
+}
+
+#relative .absolute {
+  right: -30px;
+}
