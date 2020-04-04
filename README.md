@@ -114,26 +114,4 @@ https://bootcampspot.com
 
 ## Resources We Love
 
-### For Git
-[Coming at a later date!]
-
-### For HTML/CSS
-[Coming at a later date!]
-
-### For Javascript
-[Coming at a later date!]
-
-### For APIs
-[Coming at a later date!]
-
-### For Node
-[Coming at a later date!]
-
-### For MySQL
-[Coming at a later date!]
-
-### For Mongo
-[Coming at a later date!]
-
-### For React
-[Coming at a later date!]
+[Resource List](https://docs.google.com/spreadsheets/d/1uh4BWY-8K3DLQfDNiqlBUOJZlrqIqZlGcQCSXnxIOOM/edit#gid=986605536)
