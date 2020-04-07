@@ -83,7 +83,7 @@ const graders = {
     'James Gitumbi',
     'Jerry Forsberg',
   ],
-  Cesar : [
+  cesar : [
     'Joseph Reyes',
     'Kaelyn Rieffer',
     'Lathisha Nair',
