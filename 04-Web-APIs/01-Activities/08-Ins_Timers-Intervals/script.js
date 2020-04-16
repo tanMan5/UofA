@@ -2,18 +2,19 @@ var timeEl = document.querySelector(".time");
 var mainEl = document.getElementById("main");
 
 var secondsLeft = 10;
-
+var timerInterval;
 function setTime() {
-  var timerInterval = setInterval(function() {
-    secondsLeft--;
-    timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
+  timerInterval = setInterval(updateTimer, 1000);
+}
 
-    if(secondsLeft === 0) {
-      clearInterval(timerInterval);
-      sendMessage();
-    }
+function updateTimer() {
+  secondsLeft--;
+  timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
 
-  }, 1000);
+  if(secondsLeft === 0) {
+    clearInterval(timerInterval);
+    setTimeout(sendMessage, 1000);
+  }
 }
 
 function sendMessage() {

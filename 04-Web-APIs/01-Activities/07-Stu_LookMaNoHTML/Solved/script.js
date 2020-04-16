@@ -16,7 +16,7 @@ var li3 = document.createElement("li");
 var li4 = document.createElement("li");
 
 // Store our li elements in a variable
-var listItems = document.getElementsByTagName("li");
+var listItems = document.querySelectorAll("li");
 
 // Set the text content of relevant elements
 h1El.textContent = "Welcome to my page";
