@@ -3,7 +3,7 @@ var inner = document.querySelector(".inner-div");
 var button = document.querySelector(".button");
 
 function changeBlue(event) {
-  // event.stopPropagation();
+  event.stopPropagation();
   event.currentTarget.setAttribute(
     "style",
     "background-color: blue"

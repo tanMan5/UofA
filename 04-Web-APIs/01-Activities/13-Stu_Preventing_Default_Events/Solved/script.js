@@ -17,7 +17,7 @@ function addTip() {
   var tipPercentage = tipEl.value * .01;
   var total = totalEl.value;
   var tipAmount = calculateTip(total, tipPercentage);
-  var newTotal = calculateTotal(tipAmount, total);
+  var newTotal = calculateTotal(total, tipAmount);
   document.querySelector("#tip-amount").textContent = tipAmount;
   document.querySelector("#new-total").textContent = newTotal.toFixed(2);
 }
@@ -28,7 +28,7 @@ function splitTotal() {
   var total = document.querySelector("#new-total").textContent;
   var numPeople = document.querySelector("#num-people").value;
   
-  var newTotal = (total / numPeople).toFixed(2);
+  var newTotal = (parseFloat(total) / numPeople).toFixed(2);
   document.querySelector("#split-total").textContent = newTotal;
 }
 
