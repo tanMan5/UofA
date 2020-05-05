@@ -54,6 +54,7 @@
       })
         // After the data comes back from the API
         .then(function(response) {
+          console.log(response);
           // Storing an array of results in the results variable
           var results = response.data;
 
@@ -76,7 +77,7 @@
 
               // Giving the image tag an src attribute of a proprty pulled off the
               // result item
-              personImage.attr("src", results[i].images.fixed_height.url);
+              personImage.attr("src", results[i].images.original_still.url);
 
               // Appending the paragraph and personImage we created to the "gifDiv" div we created
               gifDiv.append(p);

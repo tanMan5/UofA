@@ -47,7 +47,8 @@
           url: queryURL,
           method: "GET"
         }).then(function(response) {
-          $("#movie-view").text(JSON.stringify(response));
+          var newP = $("<p>").text(JSON.stringify(response));
+            $('#movie-view').append(newP);
         });
 
         // -----------------------------------------------------------------------
