@@ -15,6 +15,7 @@
     * [Projects](#projects)
 * [Important Links](#important-links)
 * [Resources We Love](#resources-we-love)
+* [Homework Map](#homework-map)
 
 -----------------------------------------
 ## Welcome
@@ -116,3 +117,32 @@ https://bootcampspot.com
 ## Resources We Love
 
 [Resource List](https://docs.google.com/spreadsheets/d/1uh4BWY-8K3DLQfDNiqlBUOJZlrqIqZlGcQCSXnxIOOM/edit#gid=986605536)
+
+-----------------------------------------
+
+## Homework Map
+
+| Homework Name                                                | BCS Name                                                                   |
+|--------------------------------------------------------------|----------------------------------------------------------------------------|
+| 01 HTML CSS Git: Code Refactor                               | 1: Building a Wireframe / That Portfolio Though                            |
+| 02 CSS and Bootstrap Homework: Responsive Portfolio          | 2: Responsiveness Assignment                                               |
+| 03 JavaScript: Password Generator                            | 3: JavaScript Assignment                                                   |
+| 04 Web APIs: Code Quiz                                       | 4: JQuery Assignment                                                       |
+| 05 Third-Party APIs: Work Day Scheduler                      | 5: JavaScript Assignment 2                                                 |
+| 06 Server-Side APIs: Weather Dashboard                       | 6: GifTastic                                                               |
+| Project 1                                                    | Project 1                                                                  |
+| 08 Project 1 Homework: Professional Materials                | 7: Train Scheduler (Basic - Recommended) / Rock Paper Scissors (Challenge) |
+| 09 Node.js and ES6+ Homework: Good README Generator          | Updated Portfolio Page                                                     |
+| 10 OOP Homework: Template Engine - Employee Summary          | 8: LIRI Bot                                                                |
+| 11 Express Homework: Note Taker                              | 9: Advanced JavaScript Assignment: Constructor Word Guess                  |
+| 12 MySQL Homework: Employee Tracker                          | 10: Node.js & MySQL                                                        |
+| 13 Node Express Handlebars                                   | 11: Friend Finder - Node and Express Servers                               |
+| 14 Sequelize Homework: Reverse Engineering Code              | 12: Node Express Handlebars                                                |
+| Project 2                                                    | Project 2                                                                  |
+| 16 Project 2 Homework: Professional Materials                | 13: Burger 2: The Sequel                                                   |
+| 17 Nosql Homework: Workout Tracker                           | Updated Portfolio Page #2                                                  |
+| 18 PWA Homework: Online/Offline Budget Trackers              | 14: All the News That's Fit to Scrape                                      |
+| 19 React Homework: Employee Directory                        | 15: Clicky Game                                                            |
+| 20 React Homework: React Portfolio                           | 16: Google Books React Search                                              |
+| 21 Google Books Search                                       | 17: Regionalized HW                                                        |
+| Project 3 and Final Project Homework: Professional Materials | Project 3                                                                  |

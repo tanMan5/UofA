@@ -4,7 +4,7 @@ var [node, file, command, ...args] = process.argv;
 // var node = process.argv[0];
 // var file = process.argv[1];
 // var command = process.argv[2];
-// var args = process.argv.slice(2);
+// var args = process.argv.slice(3);
 
 // console.log(node);
 // console.log(file);
