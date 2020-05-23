@@ -25,5 +25,6 @@ inquirer
     }
     else {
       console.log("You forgot your password already?!");
+      console.log(response.username);
     }
   });

@@ -1,25 +1,25 @@
 // 1. When using var, our counter exists after a for-loop is done
 
-for (var i = 0; i < 5; i++) {
-  console.log(i);
-}
+// for (var i = 0; i < 5; i++) {
+//   console.log(i);
+// }
 
-console.log(i); // Prints 5
+// console.log(i); // Prints 5
 
 
-// When using let, our counter is not defined outside of the for-loop block
+// // When using let, our counter is not defined outside of the for-loop block
 
-let x = 42;
+// let x = 42;
 
-for (let j = 0; j < 5; j++) {
-  console.log(j);
-  console.log(x);
-}
+// for (let j = 0; j < 5; j++) {
+//   console.log(j);
+//   console.log(x);
+// }
 
-console.log(j); // ReferenceError: j is not defined
+// console.log(j); // ReferenceError: j is not defined
 
-let j = 42;
-console.log(j); // prints 42
+// let j = 42;
+// console.log(j); // prints 42
 
 // ==========================================================================
 
@@ -68,3 +68,9 @@ console.log(j); // prints 42
 // This works since favoriteColor is not defined inside of a block
 // console.log(favoriteFood);
 // Prints `pizza`
+
+for (let i = 0; i < 5; i++) {
+  setTimeout(() => {
+    console.log(i);
+  }, 1000 * i);  
+}

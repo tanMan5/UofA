@@ -2,7 +2,7 @@
 var dog = {
   name: "Lassie",
   sound: "Woof!",
-  makeSound: () => console.log(this.sound),
+  makeSound: function(){ console.log(this.sound)},
   readTag: () => console.log("The dog's tag reads: " + this.name + ".")
 };
 

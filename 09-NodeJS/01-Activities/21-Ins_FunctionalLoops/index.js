@@ -46,3 +46,55 @@ console.log(moviePatrons);
 
 console.log("\nCarded Movie Patrons: ");
 console.log(cardedMoviePatrons);
+
+
+const nums = [1,2,3,4,5];
+
+const doubled = nums.map(num => num * 2);
+
+console.log(doubled);
+
+const doubledLTFive = doubled.filter(num => num < 5);
+
+console.log(doubledLTFive);
+
+const weirdArr = [
+  {
+    name: 'John Smith',
+    age: 12
+  },
+  {
+    firstName: 'Jane',
+    lastName: 'Austen',
+    age: 12
+  },
+  {
+    name: 'Jimmy Joe-Bob',
+    birthdate: '08-15-1962'
+  }
+]
+
+const normalizedArr = weirdArr.map(person => {
+  const normalized = {
+    firstName: '',
+    lastName: '',
+    age: 0
+  };
+  if (person.age) {
+    normalized.age = person.age;
+  } else if (person.birthdate) {
+    normalized.age = 2020 - parseInt(person.birthdate.split('-')[2]);
+  }
+  if (person.firstName) {
+    normalized.firstName = person.firstName
+  } else if (person.name) {
+    normalized.firstName = person.name.split(' ')[0];
+  }
+  if (person.lastName) {
+    normalized.lastName = person.lastName
+  } else if (person.name) {
+    normalized.lastName = person.name.split(' ')[1];
+  }
+  return normalized;
+});
+console.log(normalizedArr);

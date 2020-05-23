@@ -10,5 +10,8 @@ module.exports = {
   },
   quotient: function(a, b){
     return a / b;
+  },
+  pow: function(a, b){
+    return Math.pow(a, b);
   }
 };

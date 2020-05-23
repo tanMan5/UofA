@@ -18,6 +18,9 @@ switch(operation) {
   case 'quotient':
     console.log(maths.quotient(numOne, numTwo));
     break;
+  case 'pow':
+    console.log(maths.pow(numOne, numTwo));
+    break;
   default:
     console.log("Check your maths!");
 }
