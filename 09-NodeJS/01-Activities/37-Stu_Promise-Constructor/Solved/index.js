@@ -10,7 +10,7 @@ function waitFor(seconds) {
   });
 }
 
-waitFor(2)
+waitFor(-20)
   .then(function(msg) {
     console.log(msg);
   })

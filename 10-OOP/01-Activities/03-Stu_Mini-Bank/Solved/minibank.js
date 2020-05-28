@@ -27,7 +27,7 @@ function MiniBank(balance) {
     }
     const newBalance = this.getBalance() + value;
     this.setBalance(newBalance);
-    this.updateStatement(newBalance);
+    this.updateStatement(value);
     console.log(`Deposited ${value}!`);
   },
   this.withdraw = function(value) {

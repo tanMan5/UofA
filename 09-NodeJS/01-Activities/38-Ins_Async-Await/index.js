@@ -4,19 +4,34 @@ const inquirer = require("inquirer");
 getMovie();
 
 async function getMovie() {
-  try {
-    const { movie } = await inquirer.prompt({
-      message: "Search a movie:",
-      name: "movie"
-    });
+  const { movie } = await inquirer.prompt({
+    message: "Search a movie:",
+    name: "movie"
+  });
 
-    const { data } = await axios.get(
+  const { data } = await axios.get(
+    `https://www.omdbapsdrfgdsfi.com/?t=${movie}&apikey=trilogy`
+  );
+
+  console.log(data);
+  console.log('test');
+}
+
+function getMoviePromises() {
+  inquirer.prompt({
+    message: "Search a movie:",
+    name: "movie"
+  })
+  .then(function({movie})
+  {
+    return axios.get(
       `https://www.omdbapi.com/?t=${movie}&apikey=trilogy`
-    );
-
+    )
+  })
+  .then(function({data}) {
     console.log(data);
-  
-  } catch (err) {
+  })
+  .catch(function(err) {
     console.log(err);
-  }
+  })
 }
