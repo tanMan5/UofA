@@ -18,6 +18,8 @@ const parrots = new Animal(true, "Caw!");
 dogs.makeNoise();
 dogs.names = ['Spike','Thor','Fido', 'Buster'];
 console.log(dogs);
+console.log(cats);
+console.log(parrots);
 cats.makeNoise();
 parrots.makeNoise();
 

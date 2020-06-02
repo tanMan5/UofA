@@ -4,17 +4,21 @@ const inquirer = require("inquirer");
 getMovie();
 
 async function getMovie() {
-  const { movie } = await inquirer.prompt({
+  try {
+    const { movie } = await inquirer.prompt({
     message: "Search a movie:",
     name: "movie"
-  });
+    });
 
-  const { data } = await axios.get(
-    `https://www.omdbapsdrfgdsfi.com/?t=${movie}&apikey=trilogy`
-  );
+    const { data } = await axios.get(
+      `https://www.omdbapsdrfgdsfi.com/?t=${movie}&apikey=trilogy`
+    );
 
-  console.log(data);
-  console.log('test');
+    console.log(data);
+    console.log('test');
+  } catch(err) {
+    console.log(err);
+  }
 }
 
 function getMoviePromises() {

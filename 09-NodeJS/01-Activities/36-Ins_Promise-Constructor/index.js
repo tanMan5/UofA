@@ -12,7 +12,7 @@ function readFileAsync(path, encoding) {
   });
 }
 
-readFileAsync("examsdfgsdfple.txt", "utf8")
+readFileAsync("example.txt", "utf8")
   .then(function(data) {
     console.log(data);
   })
