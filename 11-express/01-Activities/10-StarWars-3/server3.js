@@ -51,9 +51,11 @@ app.get("/api/characters/:character", function(req, res) {
       return res.json(characters[i]);
     }
   }
-
   // What does this code do?
   return res.send("No character found");
+
+  // const char = characters.filter(c => c.routeName === chosen)[0];
+  // return char ? res.json(char) : res.send("No character found");
 });
 
 // Listener

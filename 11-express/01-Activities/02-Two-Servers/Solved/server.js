@@ -15,7 +15,9 @@ function handleRequestOne(request, response) {
 }
 
 function handleRequestTwo(request, response) {
-  response.end("Never trust a computer you can't throw out a window.");
+  const arr = ['q1', 'q2', 'q3'];
+  const quote = arr[Math.floor(Math.random() * arr.length)];
+  response.end(quote);
 }
 
 // =====================================================================

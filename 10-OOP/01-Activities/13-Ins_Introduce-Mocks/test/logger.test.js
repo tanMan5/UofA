@@ -43,7 +43,7 @@ describe("Logger", () => {
       const log = new Logger();
       const message = "Hello world!";
       const mock = jest.spyOn(console, "log");
-      mock.mockImplementation(() => {});
+      mock.mockImplementation();
 
       log.green(message);
 

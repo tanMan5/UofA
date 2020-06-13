@@ -1,8 +1,8 @@
 class Vehicle {
   constructor(id, numberOfWheels, sound) {
-    this.id = id;
-    this.numberOfWheels = numberOfWheels;
-    this.sound = sound;
+    this.id = id || null;
+    this.numberOfWheels = numberOfWheels || null;
+    this.sound = sound || null;
   }
 
   printInfo() {

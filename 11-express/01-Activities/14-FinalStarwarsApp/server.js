@@ -11,6 +11,7 @@ const PORT = 3000;
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static('public'))
 
 // Star Wars Characters (DATA)
 // =============================================================
@@ -43,11 +44,11 @@ const characters = [
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "view.html"));
+  res.sendFile(path.join(__dirname, 'views', "view.html"));
 });
 
 app.get("/add", function(req, res) {
-  res.sendFile(path.join(__dirname, "add.html"));
+  res.sendFile(path.join(__dirname, 'views', "add.html"));
 });
 
 // Displays all characters
@@ -79,7 +80,8 @@ app.post("/api/characters", function(req, res) {
   // Using a RegEx Pattern to remove spaces from newCharacter
   // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
   newCharacter.routeName = newCharacter.name.replace(/\s+/g, "").toLowerCase();
-
+  newCharacter.age = parseInt(newCharacter.age);
+  newCharacter.forcePoints = parseInt(newCharacter.forcePoints);
   console.log(newCharacter);
 
   characters.push(newCharacter);
