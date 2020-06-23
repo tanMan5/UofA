@@ -1,38 +1,38 @@
-var expect = chai.expect;
+constexpect = chai.expect;
 
 describe("permutationSubstring", function() {
   it(`should return true if given the strings "tbacowa" and "bat"`, function() {
-    var str = "tbacowa";
-    var sub = "bat";
+    conststr = "tbacowa";
+    constsub = "bat";
 
-    var result = permutationSubstring(str, sub);
+    constresult = permutationSubstring(str, sub);
 
     expect(result).to.eql(true);
   });
 
   it(`should return true if given the strings "nAtsuiPlwuan" and "Austin"`, function() {
-    var str = "nAtsuiPlwuan";
-    var sub = "Austin";
+    conststr = "nAtsuiPlwuan";
+    constsub = "Austin";
 
-    var result = permutationSubstring(str, sub);
+    constresult = permutationSubstring(str, sub);
 
     expect(result).to.eql(true);
   });
 
   it(`should return false if given the strings "nnhsuieaero" and "summer"`, function() {
-    var str = "nnhsuieaero";
-    var sub = "summer";
+    conststr = "nnhsuieaero";
+    constsub = "summer";
 
-    var result = permutationSubstring(str, sub);
+    constresult = permutationSubstring(str, sub);
 
     expect(result).to.eql(false);
   });
 
   it(`should return false if given the strings "octmantisplantic" and "atlantic ocean"`, function() {
-    var str = "octmantisplantic";
-    var sub = "atlantic ocean";
+    conststr = "octmantisplantic";
+    constsub = "atlantic ocean";
 
-    var result = permutationSubstring(str, sub);
+    constresult = permutationSubstring(str, sub);
 
     expect(result).to.eql(false);
   });

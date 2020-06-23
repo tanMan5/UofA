@@ -1,14 +1,14 @@
-var express = require("express");
-var exphbs = require("express-handlebars");
+const express = require("express");
+const exphbs = require("express-handlebars");
 
-var app = express();
+const app = express();
 
-var PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-var animals = [
+const animals = [
   {
     animalType: "dog",
     pet: true,
@@ -44,13 +44,13 @@ app.get("/all-pets", function(req, res) {
   // Handlebars requires an object to be sent to the index handlebars file.
 
   // 2. Loop through the animals, and send those that are pets to the index handlebars file.
-  var data = {
+  const data = {
     animals: []
   };
 
-  for (var i = 0; i < animals.length; i += 1) {
+  for (let i = 0; i < animals.length; i += 1) {
     // Get the current animal.
-    var currentAnimal = animals[i];
+    const currentAnimal = animals[i];
 
     // Check if this animal is a pet.
     if (currentAnimal.pet) {
@@ -66,13 +66,13 @@ app.get("/all-non-pets", function(req, res) {
   // Handlebars requires an object to be sent to the index handlebars file.
 
   // 3. Loop through the animals, and send those that are not pets to the index handlebars file.
-  var data = {
+  const data = {
     animals: []
   };
 
-  for (var i = 0; i < animals.length; i += 1) {
+  for (let i = 0; i < animals.length; i += 1) {
     // Get the current animal.
-    var currentAnimal = animals[i];
+    const currentAnimal = animals[i];
 
     // Check if this animal is a pet.
     if (!currentAnimal.pet) {

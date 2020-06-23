@@ -3,4 +3,4 @@
 // Return the common number
 // You may not use the `indexOf` or `includes` method
 
-var commonElement = function(arrA, arrB) {};
+const commonElement = function(arrA, arrB) {};

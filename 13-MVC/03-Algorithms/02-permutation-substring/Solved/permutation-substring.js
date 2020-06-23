@@ -2,11 +2,11 @@
 // Return true if the second string is a substring of any permutation of the first string
 // Else return false
 
-var permutationSubstring = function(str, sub) {
-  var charMap = {};
+const permutationSubstring = function(str, sub) {
+  const charMap = {};
 
-  for (var i = 0; i < sub.length; i++) {
-    var char = sub[i];
+  for (let i = 0; i < sub.length; i++) {
+    const char = sub[i];
 
     if (char in charMap) {
       charMap[char]++;
@@ -15,14 +15,14 @@ var permutationSubstring = function(str, sub) {
     }
   }
 
-  for (var i = 0; i < str.length; i++) {
-    var char = str[i];
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
     if (char in charMap) {
       charMap[char] -= 1;
     }
   }
 
-  for (var key in charMap) {
+  for (let key in charMap) {
     if (charMap[key] > 0) {
       return false;
     }

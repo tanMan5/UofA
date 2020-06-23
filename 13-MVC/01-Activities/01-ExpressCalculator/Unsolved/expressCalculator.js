@@ -1,12 +1,12 @@
 // Dependencies
-var express = require("express");
+const express = require("express");
 
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku
-var PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
 // Create express app instance.
-var app = express();
+const app = express();
 
 // Routes
 // What routes do you need to have? Which ones are optional?
@@ -19,7 +19,7 @@ app.get("", function(req, res) {
   // Parameters are converted to integers
 
   // Initialize the result variable to send later
-  var result;
+  let result;
   // Switch statement chooses operation based on the operation parameter.
   switch (operation) {
   // BONUS - How could you use * + etc. inside the app.get()?
