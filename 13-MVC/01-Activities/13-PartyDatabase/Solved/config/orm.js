@@ -19,7 +19,7 @@ const orm = {
     });
   },
   leftJoin: function(whatToSelect, tableOne, tableTwo, onTableOneCol, onTableTwoCol) {
-    const queryString = "SELECT ?? FROM ?? AS tOne";
+    let queryString = "SELECT ?? FROM ?? AS tOne";
     queryString += " LEFT JOIN ?? AS tTwo";
     queryString += " ON tOne.?? = tTwo.??";
 
