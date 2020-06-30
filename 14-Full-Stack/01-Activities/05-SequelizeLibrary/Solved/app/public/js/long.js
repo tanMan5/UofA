@@ -2,9 +2,9 @@
 $.get("/api/books/long", function(data) {
 
   // For each book that our server sends us back
-  for (var i = 0; i < data.length; i++) {
+  for (let i = 0; i < data.length; i++) {
     // Create a parent div to hold book data
-    var wellSection = $("<div>");
+    const wellSection = $("<div>");
     // Add a class to this div: 'well'
     wellSection.addClass("well");
     // Add an id to the well to mark which well it is

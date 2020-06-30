@@ -2,10 +2,10 @@
 // CONNECTION.JS - THIS FILE INITIATES THE CONNECTION TO MYSQL
 // *********************************************************************************
 
-var mysql = require("mysql");
+const mysql = require("mysql");
 
 // we placed the connections in this source object
-var source = {
+const source = {
   // localhost
   localhost: {
     host: "localhost",
@@ -26,7 +26,7 @@ var source = {
 };
 
 // we use source.[name of connection] to hook into mysql
-var connection = mysql.createConnection(source.localhost);
+const connection = mysql.createConnection(source.localhost);
 
 connection.connect(function(err) {
   if (err) {

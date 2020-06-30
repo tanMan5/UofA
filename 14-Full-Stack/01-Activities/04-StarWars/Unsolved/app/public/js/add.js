@@ -6,7 +6,7 @@ $("#add-btn").on("click", function(event) {
   event.preventDefault();
 
   // make a newCharacter obj
-  var newCharacter = {
+  const newCharacter = {
     // name from name input
     name: $("#name").val().trim(),
     // role from role input

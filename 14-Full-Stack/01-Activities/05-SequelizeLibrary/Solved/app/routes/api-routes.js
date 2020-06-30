@@ -4,7 +4,7 @@
 
 // Dependencies
 // =============================================================
-var Book = require("../models/book.js");
+const Book = require("../models/book.js");
 
 // Routes
 // =============================================================

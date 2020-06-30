@@ -34,7 +34,7 @@
     * Question: How would I model it in Sequelize?
 
       ```javascript
-      var tableName = sequelize.define('tableName', {
+      const tableName = sequelize.define('tableName', {
         Country: {
           type: Sequelize.STRING
         },

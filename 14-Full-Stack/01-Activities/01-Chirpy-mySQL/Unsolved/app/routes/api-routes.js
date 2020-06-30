@@ -4,7 +4,7 @@
 
 // Dependencies
 // =============================================================
-var connection = require("../config/connection.js");
+const connection = require("../config/connection.js");
 
 
 // Routes

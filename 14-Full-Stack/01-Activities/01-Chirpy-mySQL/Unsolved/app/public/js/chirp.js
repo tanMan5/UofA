@@ -5,9 +5,9 @@ $.get("/api/all", function(data) {
 
   if (data.length !== 0) {
 
-    for (var i = 0; i < data.length; i++) {
+    for (let i = 0; i < data.length; i++) {
 
-      var row = $("<div>");
+      const row = $("<div>");
       row.addClass("chirp");
 
       row.append("<p>" + data[i].author + " chirped.. </p>");
@@ -27,7 +27,7 @@ $("#chirp-submit").on("click", function(event) {
   event.preventDefault();
 
   // Make a newChirp object
-  var newChirp = {
+  const newChirp = {
     author: $("#author").val().trim(),
     body: $("#chirp-box").val().trim(),
     created_at: moment().format("YYYY-MM-DD HH:mm:ss")
@@ -40,7 +40,7 @@ $("#chirp-submit").on("click", function(event) {
     // On success, run the following code
     .then(function() {
 
-      var row = $("<div>");
+      const row = $("<div>");
       row.addClass("chirp");
 
       row.append("<p>" + newChirp.author + " chirped: </p>");

@@ -57,7 +57,7 @@ $(document).ready(function() {
   function initializeRows() {
     blogContainer.empty();
     var postsToAdd = [];
-    for (var i = 0; i < posts.length; i++) {
+    for (let i = 0; i < posts.length; i++) {
       postsToAdd.push(createNewRow(posts[i]));
     }
     blogContainer.append(postsToAdd);
