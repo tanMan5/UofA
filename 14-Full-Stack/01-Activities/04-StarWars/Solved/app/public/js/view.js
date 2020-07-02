@@ -5,7 +5,7 @@
 // when user hits the search-btn
 $("#search-btn").on("click", function() {
   // save the character they typed into the character-search input
-  const searchedCharacter = $("#character-search")
+  let searchedCharacter = $("#character-search")
     .val()
     .trim();
 

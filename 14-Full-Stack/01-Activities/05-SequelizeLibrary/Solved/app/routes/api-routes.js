@@ -1,7 +1,7 @@
 // *********************************************************************************
 // api-routes.js - this file offers a set of routes for displaying and saving data to the db
 // *********************************************************************************
-
+const {Op} = require('sequelize');
 // Dependencies
 // =============================================================
 const Book = require("../models/book.js");
@@ -54,7 +54,7 @@ module.exports = function(app) {
     Book.findAll({
       where: {
         pages: {
-          $gte: 150
+          [Op.gte]: 150
         }
       },
       order: [["pages", "DESC"]]
@@ -68,7 +68,7 @@ module.exports = function(app) {
     Book.findAll({
       where: {
         pages: {
-          $lte: 150
+          [Op.lte]: 150
         }
       },
       order: [["pages", "ASC"]]

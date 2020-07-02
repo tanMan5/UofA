@@ -2,16 +2,16 @@
 // =============================================================
 
 // Sequelize (capital) references the standard library
-const Sequelize = require("sequelize");
+const DataTypes = require("sequelize");
 // sequelize (lowercase) references my connection to the DB.
 const sequelize = require("../config/connection.js");
 
 // Creates a "Book" model that matches up with DB
 const Book = sequelize.define("book", {
-  title: Sequelize.STRING,
-  author: Sequelize.STRING,
-  genre: Sequelize.STRING,
-  pages: Sequelize.INTEGER
+  title: DataTypes.STRING,
+  author: DataTypes.STRING,
+  genre: DataTypes.STRING,
+  pages: DataTypes.INTEGER
 });
 
 // Syncs with DB

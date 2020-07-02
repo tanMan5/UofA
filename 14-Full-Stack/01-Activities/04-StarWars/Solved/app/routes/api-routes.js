@@ -50,4 +50,22 @@ module.exports = function(app) {
 
     res.status(204).end();
   });
+  
+  app.put("/api/:character", function(req, res) {
+    const character = req.body;
+    const routeName = character.name.replace(/\s+/g, "").toLowerCase();
+    Character.update({
+      routeName: routeName,
+      name: character.name,
+      role: character.role,
+      age: character.age,
+      forcePoints: character.forcePoints
+    }, {
+      where: {
+        routeName: req.params.character
+      }
+    }).then(function(result) {
+      return res.json(result);
+    });
+  });
 };
