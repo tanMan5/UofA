@@ -30,12 +30,14 @@ module.exports = function(app) {
       text: req.body.text,
       complete: req.body.complete
     }).then(function(dbTodo) {
+      console.log(dbTodo);
       // We have access to the new todo as an argument inside of the callback function
       res.json(dbTodo);
     })
       .catch(function(err) {
       // Whenever a validation or flag fails, an error is thrown
       // We can "catch" the error to prevent it from being "thrown", which could crash our node app
+      console.log(err);
         res.json(err);
       });
   });
