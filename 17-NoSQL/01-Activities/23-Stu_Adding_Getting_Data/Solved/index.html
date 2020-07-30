@@ -18,7 +18,7 @@
         // Creates an object store with a listID keypath that can be used to query on.
         const toDoListStore = db.createObjectStore("toDoList", {keyPath: "listID"});
         // Creates a statusIndex that we can query on.
-        toDoListStore.createIndex("statusIndex", "status"); 
+        toDoListStore.createIndex("completedIndex", "completed"); 
       }
 
       // Opens a transaction, accesses the toDoList objectStore and statusIndex.
@@ -26,22 +26,22 @@
         const db = request.result;
         const transaction = db.transaction(["toDoList"], "readwrite");
         const toDoListStore = transaction.objectStore("toDoList");
-        const statusIndex = toDoListStore.index("statusIndex");
+        const completedIndex = toDoListStore.index("completedIndex");
   
         // Adds data to our objectStore
-        toDoListStore.add({ listID: "1", status: "complete" });
-        toDoListStore.add({ listID: "2", status: "in-progress" });
-        toDoListStore.add({ listID: "3", status: "complete" });
-        toDoListStore.add({ listID: "4", status: "backlog" });
+        // toDoListStore.add({ listID: 1, title: "Learn to code", completed: 'true' });
+        // toDoListStore.add({ listID: 2, title: "Stop copying me", completed: 'true' });
+        // toDoListStore.add({ listID: 3, title: "Make some changes and learn some stuff", completed: 'true' });
+        // toDoListStore.add({ listID: 4, title: "Git Good.", completed: 'false' });
        
         // Return an item by keyPath
-        const getRequest = toDoListStore.get("1");
+        const getRequest = toDoListStore.get(1);
         getRequest.onsuccess = () => {
           console.log(getRequest.result);
         };
 
         // Return an item by index
-        const getRequestIdx = statusIndex.getAll("complete");
+        const getRequestIdx = completedIndex.getAll();
         getRequestIdx.onsuccess = () => {
           console.log(getRequestIdx.result); 
         }; 

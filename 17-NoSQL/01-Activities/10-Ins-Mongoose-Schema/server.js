@@ -9,7 +9,8 @@ const data = {
   boolean: false,
   string:
     "\"Don't worry if it doesn't work right. If everything did, you'd be out of a job\" - Mosher's Law of Software Engineering",
-  number: 42
+  number: 909090,
+  longstring: 'Hi there john'
 };
 
 Example.create(data)
