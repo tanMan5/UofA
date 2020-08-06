@@ -15,11 +15,14 @@
         console.log(request.result);
       };
 
-      request.onupgradeneeded = ({ target }) => {
-        console.log(1);
+      request.onupgradeneeded = ({ target, oldVersion }) => {
         const db = target.result;
-        
+        if (oldVersion < 1) {
+          const objectStore = db.createObjectStore("toDoList");
+        }
+        if (oldVersion < 2) {
         const objectStore = db.createObjectStore("notToDoList");
+        }
       };
     </script>
   </body>
