@@ -9,7 +9,7 @@
   <body>
     <h1>Open Your Developer Tools > Application > IndexedDB</h1>
     <script>
-      const request = window.indexedDB.open("toDoList", 1);
+      const request = indexedDB.open("toDoList", 1);
 
       // Create schema
       request.onupgradeneeded = event => {
@@ -32,7 +32,7 @@
         toDoListStore.add({ listID: "5", status: "complete", test: 123 });
        
         // Return an item by keyPath
-        const getRequest = toDoListStore.get("1");
+        const getRequest = toDoListStore.get("5");
         getRequest.onsuccess = () => {
           console.log(getRequest.result);
         };
