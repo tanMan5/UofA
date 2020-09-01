@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Jumbotron from "../../components/Jumbotron";
 import DeleteBtn from "../../components/DeleteBtn";
 import API from "../../utils/API";
@@ -9,11 +9,14 @@ import { Input, TextArea, FormBtn } from "../../components/Form";
 function Books() {
   // Setting our component's initial state
   const [books, setBooks] = useState([])
-  const [formObject, setFormObject] = useState({
-    title: "",
-    author: "",
-    synopsis: ""
-  })
+  // const [formObject, setFormObject] = useState({
+  //   title: "",
+  //   author: "",
+  //   synopsis: ""
+  // })
+  const titleRef = useRef();
+  const authorRef = useRef();
+  const synopsisRef = useRef();
 
   // Load all books and store them with setBooks
   useEffect(() => {
@@ -32,31 +35,31 @@ function Books() {
   // Deletes a book from the database with a given id, then reloads books from the db
   function deleteBook(id) {
     API.deleteBook(id)
-      .then(res => loadBooks())
+      .then(() => loadBooks())
       .catch(err => console.log(err));
   }
 
   // Handles updating component state when the user types into the input field
-  function handleInputChange(event) {
-    const { name, value } = event.target;
-    setFormObject({...formObject, [name]: value})
-  };
+  // function handleInputChange(event) {
+  //   const { name, value } = event.target;
+  //   setFormObject({...formObject, [name]: value})
+  // };
 
   // When the form is submitted, use the API.saveBook method to save the book data
   // Then reload books from the database
   function handleFormSubmit(event) {
     event.preventDefault();
-    if (formObject.title && formObject.author) {
+    if (titleRef.current.value && authorRef.current.value) {
       API.saveBook({
-        title: formObject.title,
-        author: formObject.author,
-        synopsis: formObject.synopsis
+        title: titleRef.current.value,
+        author: authorRef.current.value,
+        synopsis: synopsisRef.current.value
       })
-        .then(() => setFormObject({
-          title: "",
-          author: "",
-          synopsis: ""
-        }))
+        .then(() => {
+          titleRef.current.value = '';
+          authorRef.current.value = '';
+          synopsisRef.current.value = '';
+        })
         .then(() => loadBooks())
         .catch(err => console.log(err));
     }
@@ -70,26 +73,23 @@ function Books() {
               <h1>What Books Should I Read?</h1>
             </Jumbotron>
             <form>
-              <Input
-                onChange={handleInputChange}
+              <input
+                ref={titleRef}
                 name="title"
                 placeholder="Title (required)"
-                value={formObject.title}
               />
-              <Input
-                onChange={handleInputChange}
+              <input
+                ref={authorRef}
                 name="author"
                 placeholder="Author (required)"
-                value={formObject.author}
               />
-              <TextArea
-                onChange={handleInputChange}
+              <input
+                ref={synopsisRef}
                 name="synopsis"
                 placeholder="Synopsis (Optional)"
-                value={formObject.synopsis}
               />
               <FormBtn
-                disabled={!(formObject.author && formObject.title)}
+                // disabled={!(authorRef.current.value && titleRef.current.value)}
                 onClick={handleFormSubmit}
               >
                 Submit Book
