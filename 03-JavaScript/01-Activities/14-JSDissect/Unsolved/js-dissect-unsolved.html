@@ -8,22 +8,25 @@
   </head>
   <body>
     <script type="text/javascript">
-
+      //prompt asks user what their name is
       var userName = prompt("What's your name?");
+      //confirm asks if the user likes cats
       var confirmCats = confirm("Do you like cats?");
 
       var petName = "Meeses";
       var petType = "Tuxedo Cat";
       var petAge = 5;
       var petIsCat = true;
-
+      // if user confirms they like cats an alert will ask pet name, pet type and pet age
       if (confirmCats) {
         alert(petName + " " + petType + " " + petAge);
       }
+
+      //if it doesnt match it alerts user that they dont get cats information
       else {
         alert("You don't get my cat's information");
       }
-
+      // if user confirms they like cats or dont like cats it will alert the following
       if (petIsCat) {
         alert("My pet is a cat");
       }

@@ -13,3 +13,8 @@ var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
 * Then check if the first letter in the animal's name begins with a "c" or "o". If it does, create an alert saying, "Starts with 'c' or 'o'!"
 
 * **HINT:** You can access the first character of a string as if it were the first element of an array.
+
+
+const myfarm = ["cow", "pig", "horse", "dog", "rooster"];
+
+console.log(myfarm.startsWith("c"))
