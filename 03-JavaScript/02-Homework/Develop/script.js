@@ -1,3 +1,7 @@
+// Build array of special characters
+// Build array of numbers
+// Build array of lower case letters
+// Build array of upper case letters
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
